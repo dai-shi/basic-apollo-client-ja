@@ -27,14 +27,65 @@ RESTで設計する方が速いだろうなどと言われています。
 
 [公式ドキュメント](http://graphql.org/learn/)に簡単な例が載っているので参考になります。
 
+例えば、
+
+```
+{
+  "me": {
+    "name": "Luke Skywalker"
+  }
+}
+```
+
+のようなJSONを返して欲しい時のクエリは、
+
+```
+{
+  me {
+    name
+  }
+}
+```
+
+のようになります。GraphQLのクエリはJSONのkey部分を残したような形になります。
+このクエリを実現するためのスキーマは次のようになります。
+
+```
+type Query {
+  me: User
+}
+
+type User {
+  id: ID
+  name: String
+}
+```
+
+Userはオブジェクトタイプでそのフィールドにidとnameがあります。
+IDやStringはスカラータイプでGraphQLで規定されたものです。
+オブジェクトタイプは入れ子にできるので、スキーマ全体としては有向グラフになります。（ループがなければツリーになります）
 
 
+### クエリの書き方
 
-### GraphQL BaaS
-- GraphCMS *
-- Graphcool *
-- Reindex
-- Scaphold
-- AWS AppSync
+<http://graphql.org/learn/queries/>を参照して、クエリの書き方を学びましょう。
 
+### スキーマの書き方
 
+<http://graphql.org/learn/schema/>を参照して、クエリの書き方を学びましょう。
+
+## GraphQLサービス
+
+GraphQLを実際に採用している例としてGitHub APIがあります。
+
+<https://developer.github.com/v4/>
+
+また、GraphQLをBaaSとして提供するサービスもあります。
+
+- [GraphCMS](https://graphcms.com/)
+- [Graphcool](https://www.graph.cool/)
+- [Reindex](https://www.reindex.io/)
+- [Scaphold](https://scaphold.io/)
+- [AWS AppSync](https://aws.amazon.com/jp/appsync/)
+
+今後も類似のサービスが登場してくることでしょう。
