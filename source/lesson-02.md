@@ -89,3 +89,9 @@ GraphQLを実際に採用している例としてGitHub APIがあります。
 - [AWS AppSync](https://aws.amazon.com/jp/appsync/)
 
 今後も類似のサービスが登場してくることでしょう。
+
+## 課題
+
+1. クエリの書き方を学ぶ
+2. スキーマの書き方を学ぶ
+3. BaaSのサイトを一つ見てみる
