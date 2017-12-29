@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lesson-04.md" />
+    <link rel="next" href="lesson-04.html" />
     
     
     <link rel="prev" href="lesson-02.html" />
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="lesson-04.md">
+        <li class="chapter " data-level="1.5" data-path="lesson-04.html">
             
-                <span>
+                <a href="lesson-04.html">
             
                     
                     Lesson 04: Apolloとは
@@ -154,9 +154,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="lesson-05.md">
+        <li class="chapter " data-level="1.6" data-path="lesson-05.html">
             
-                <span>
+                <a href="lesson-05.html">
             
                     
                     Lesson 05: LimeGreenJSの使い方
@@ -167,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="lesson-06.md">
+        <li class="chapter " data-level="1.7" data-path="lesson-06.html">
             
-                <span>
+                <a href="lesson-06.html">
             
                     
                     Lesson 06: GraphCMSセットアップ
@@ -180,9 +180,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="lesson-07.md">
+        <li class="chapter " data-level="1.8" data-path="lesson-07.html">
             
-                <span>
+                <a href="lesson-07.html">
             
                     
                     Lesson 07: simple-blog解説
@@ -224,7 +224,7 @@
                 <span>
             
                     
-                    Lesson 10: 課題
+                    Lesson 10: 総合課題
             
                 </a>
             
@@ -337,16 +337,54 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="graphiql&#x306E;&#x4F7F;&#x3044;&#x65B9;">GraphiQL&#x306E;&#x4F7F;&#x3044;&#x65B9;</h1>
-<ul>
-<li>SWAPI<ul>
-<li><a href="http://swapi.co/" target="_blank">http://swapi.co/</a></li>
-</ul>
-</li>
-<li>GraphiQL for SWAPI<ul>
-<li><a href="http://graphql.org/swapi-graphql/" target="_blank">http://graphql.org/swapi-graphql/</a></li>
-</ul>
-</li>
-</ul>
+<p>GraphQL&#x3092;&#x4F7F;&#x3046;&#x4E0A;&#x3067;&#x3001;&#x5FC5;&#x8981;&#x4E0D;&#x53EF;&#x6B20;&#x306A;&#x30C4;&#x30FC;&#x30EB;&#x306B;GraphiQL(&#x300C;&#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30AB;&#x30EB;&#x300D;)&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+&#x3053;&#x306E;&#x30C4;&#x30FC;&#x30EB;&#x3092;&#x4F7F;&#x3046;&#x3068;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x4E0A;&#x3067;&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x7D44;&#x307F;&#x7ACB;&#x3066;&#x3066;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>GraphQL&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3067;&#x306F;&#x3001;&#x30B9;&#x30BF;&#x30FC;&#x30A6;&#x30A9;&#x30FC;&#x30BA;&#x306E;&#x767B;&#x5834;&#x4EBA;&#x7269;&#x306A;&#x3069;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3067;&#x304D;&#x308B;
+<a href="http://swapi.co/" target="_blank">SWAPI</a>&#x306E;GraphQL&#x7248;&#x304C;&#x7D39;&#x4ECB;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="graphiql-for-swapi">GraphiQL for SWAPI</h2>
+<p>&#x3053;&#x3061;&#x3089;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x958B;&#x3044;&#x3066;&#x8A66;&#x3057;&#x306A;&#x304C;&#x3089;&#x52C9;&#x5F37;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><a href="http://graphql.org/swapi-graphql/" target="_blank">http://graphql.org/swapi-graphql/</a></p>
+<h2 id="docs">Docs</h2>
+<p>&#x53F3;&#x4E0A;&#x306B;Docs&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+Docs&#x3092;&#x898B;&#x308B;&#x3068;&#x3001;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x30AF;&#x30A8;&#x30EA;&#x3084;&#x30BF;&#x30A4;&#x30D7;&#x304C;&#x3042;&#x308B;&#x304B;&#x304C;&#x5206;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x4F8B;&#x3048;&#x3070;allFilms&#x3068;&#x3044;&#x3046;&#x306E;&#x306F;&#x3059;&#x3079;&#x3066;&#x306E;&#x30D5;&#x30A3;&#x30EB;&#x30E0;&#x306B;&#x95A2;&#x3059;&#x308B;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x30AF;&#x30A8;&#x30EA;&#x3067;&#x3001;
+FilmConnection&#x3092;&#x7D4C;&#x7531;&#x3057;&#x3066;Film&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+Film&#x306B;&#x306F;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3084;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x65E5;&#x306A;&#x3069;&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x304C;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>allPeople&#x3084;allVehicles&#x306A;&#x3069;&#x306E;&#x30AF;&#x30A8;&#x30EA;&#x3082;&#x3042;&#x308B;&#x306E;&#x3067;&#x3069;&#x3093;&#x306A;
+&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x304C;&#x3042;&#x308B;&#x304B;&#x773A;&#x3081;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&#x3053;&#x306E;Docs&#x306E;&#x60C5;&#x5831;&#x306F;GraphQL&#x306E;&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x3092;&#x66F8;&#x304F;&#x3060;&#x3051;&#x3067;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x307E;&#x305F;&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x4E2D;&#x306B;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x66F8;&#x304F;&#x3053;&#x3068;&#x3067;Docs&#x306E;&#x5185;&#x5BB9;&#x3092;&#x62E1;&#x5145;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x88DC;&#x5B8C;&#x3092;&#x4F7F;&#x3063;&#x305F;&#x30AF;&#x30A8;&#x30EA;&#x7D44;&#x307F;&#x7ACB;&#x3066;">&#x88DC;&#x5B8C;&#x3092;&#x4F7F;&#x3063;&#x305F;&#x30AF;&#x30A8;&#x30EA;&#x7D44;&#x307F;&#x7ACB;&#x3066;</h2>
+<p>&#x5DE6;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30DA;&#x30A4;&#x30F3;&#x304C;&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3068;&#x3053;&#x308D;&#x3067;&#x3059;&#x3002;
+&#x30AF;&#x30A8;&#x30EA;&#x306F;&#x88DC;&#x5B8C;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x7D44;&#x307F;&#x7ACB;&#x3066;&#x308B;&#x3068;&#x7C21;&#x5358;&#x3067;&#x3059;&#x3002;</p>
+<p>&#x307E;&#x305A;&#x3001; <code>{}</code> &#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304B;&#x3089;&#x30A8;&#x30F3;&#x30BF;&#x30FC;&#x3067;&#x884C;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+&#x3053;&#x306E;&#x30D6;&#x30E9;&#x30B1;&#x30C3;&#x30C8;&#x5185;&#x3067;Shift-Space&#x3092;&#x62BC;&#x3059;&#x3068;&#x3001;&#x30AF;&#x30A8;&#x30EA;&#x306E;&#x5019;&#x88DC;&#x304C;&#x51FA;&#x307E;&#x3059;&#x3002;
+&#x4F8B;&#x3048;&#x3070;&#x3001;allPeople&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&#x3055;&#x3089;&#x306B;&#x3001; <code>{}</code> &#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x884C;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x304B;&#x3089;Shift-Space&#x3092;&#x62BC;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x4ECA;&#x56DE;&#x306F;totalCount&#x3068;people&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>people&#x306E;&#x4E2D;&#x8EAB;&#x3082;&#x3055;&#x3089;&#x306B;&#x7D44;&#x307F;&#x7ACB;&#x3066;&#x307E;&#x3059;&#x3002;
+name&#x3068;gender&#x3068;homeworld&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+homeworld&#x306B;&#x306F;&#x3055;&#x3089;&#x306B;name&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="&#x30AF;&#x30A8;&#x30EA;&#x306E;&#x5B9F;&#x884C;">&#x30AF;&#x30A8;&#x30EA;&#x306E;&#x5B9F;&#x884C;</h2>
+<p>&#x4E0A;&#x90E8;&#x306E;&#x5B9F;&#x884C;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;&#x3068;&#x30AF;&#x30A8;&#x30EA;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x3001;
+&#x53F3;&#x5074;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30DA;&#x30A4;&#x30F3;&#x306B;&#x7D50;&#x679C;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+people&#x306F;&#x914D;&#x5217;&#x306B;&#x306A;&#x3063;&#x3066;&#x8907;&#x6570;&#x8FD4;&#x3063;&#x3066;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x4EF6;&#x6570;&#x304C;&#x591A;&#x3044;&#x5834;&#x5408;&#x306F;pageInfo&#x3084;after&#x306A;&#x3069;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30DA;&#x30FC;&#x30B8;&#x30F3;&#x30B0;&#x3082;&#x5B9F;&#x73FE;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</h2>
+<p>GraphQL&#x306E;&#x6A5F;&#x80FD;&#x3068;&#x3057;&#x3066;&#x30AF;&#x30A8;&#x30EA;&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+&#x8A66;&#x3057;&#x306B;&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x9593;&#x9055;&#x3048;&#x3066;&#x66F8;&#x3044;&#x3066;&#x898B;&#x3066;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x3067;&#x308B;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="&#x305D;&#x306E;&#x4ED6;">&#x305D;&#x306E;&#x4ED6;</h2>
+<p>&#x4ECA;&#x56DE;&#x306F;&#x6271;&#x3044;&#x307E;&#x305B;&#x3093;&#x3067;&#x3057;&#x305F;&#x304C;&#x3001;query variable&#x3092;&#x4F7F;&#x3046;&#x3068;
+query&#x306B;&#x5F15;&#x6570;&#x3092;&#x4E0E;&#x3048;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x307E;&#x305F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;query&#x3060;&#x3051;&#x3067;&#x306F;&#x306A;&#x304F;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x66F8;&#x304D;&#x63DB;&#x3048;&#x308B;&#x30BF;&#x30A4;&#x30D7;&#x306E;
+mutation&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+mutation&#x3082;&#x53B3;&#x5BC6;&#x306B;&#x306F;query&#x306E;&#x4E00;&#x7A2E;&#x306A;&#x306E;&#x3067;&#x540C;&#x3058;&#x3088;&#x3046;&#x306B;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h2>
+<ol>
+<li>Docs&#x3092;&#x8AAD;&#x3080;</li>
+<li>&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x3044;&#x308D;&#x3044;&#x308D;&#x5909;&#x3048;&#x3066;5&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x304F;&#x3089;&#x3044;&#x8A66;&#x3059;</li>
+<li>&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x9593;&#x9055;&#x3048;&#x305F;&#x5834;&#x5408;&#x306E;&#x30A8;&#x30E9;&#x30FC;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;</li>
+</ol>
 
                                 
                                 </section>
@@ -379,7 +417,7 @@
                 </a>
                 
                 
-                <a href="lesson-04.md" class="navigation navigation-next " aria-label="Next page: Lesson 04: Apolloとは">
+                <a href="lesson-04.html" class="navigation navigation-next " aria-label="Next page: Lesson 04: Apolloとは">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -390,7 +428,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lesson 03: GraphiQLの使い方","level":"1.4","depth":1,"next":{"title":"Lesson 04: Apolloとは","level":"1.5","depth":1,"path":"lesson-04.md","ref":"lesson-04.md","articles":[]},"previous":{"title":"Lesson 02: GraphQLとは","level":"1.3","depth":1,"path":"lesson-02.md","ref":"lesson-02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-03.md","mtime":"2017-12-19T00:06:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-21T11:57:31.780Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lesson 03: GraphiQLの使い方","level":"1.4","depth":1,"next":{"title":"Lesson 04: Apolloとは","level":"1.5","depth":1,"path":"lesson-04.md","ref":"lesson-04.md","articles":[]},"previous":{"title":"Lesson 02: GraphQLとは","level":"1.3","depth":1,"path":"lesson-02.md","ref":"lesson-02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-03.md","mtime":"2017-12-21T12:55:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-28T22:05:10.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
