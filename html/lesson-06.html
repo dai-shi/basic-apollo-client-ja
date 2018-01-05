@@ -193,9 +193,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="lesson-08.md">
+        <li class="chapter " data-level="1.9" data-path="lesson-08.html">
             
-                <span>
+                <a href="lesson-08.html">
             
                     
                     Lesson 08: Graphcoolセットアップ
@@ -396,11 +396,27 @@ DOWNLOAD SCHEMA&#x3068;&#x3044;&#x3046;&#x30DC;&#x30BF;&#x30F3;&#x304C;&#x3042;&
 <p>CONTENT / Article&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&quot;+&quot;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3057;&#x3066;&#x8A18;&#x4E8B;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
 3&#x8A18;&#x4E8B;&#x304F;&#x3089;&#x3044;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x304A;&#x304F;&#x3068;&#x826F;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;
 &#x307E;&#x305F;&#x3001;&#x30AB;&#x30D0;&#x30FC;&#x5199;&#x771F;&#x3082;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h2 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h2>
+<h2 id="graphiql">GraphiQL</h2>
+<p>GraphCMS&#x306B;&#x3082;GraphiQL&#x304C;&#x7D44;&#x307F;&#x8FBC;&#x307E;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+API EXPLORER&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x7D44;&#x307F;&#x7ACB;&#x3066;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&#x306F;&#x3058;&#x3081;&#x306F;&#x88DC;&#x5B8C;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x3044;&#x306A;&#x304C;&#x3089;&#x30BC;&#x30ED;&#x304B;&#x3089;&#x7D44;&#x307F;&#x7ACB;&#x3066;&#x3066;&#x307F;&#x308B;&#x306E;&#x304C;&#x826F;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&#x6163;&#x308C;&#x3066;&#x304D;&#x305F;&#x3089;&#x6700;&#x5F8C;&#x306B;&#x4E0B;&#x8A18;&#x306E;&#x30AF;&#x30A8;&#x30EA;&#x304C;&#x52D5;&#x304F;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code>{
+  allArticles(orderBy: date_ASC) {
+    id
+    title
+    date
+    content
+    cover {
+      url
+    }
+  }
+}
+</code></pre><h2 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h2>
 <ol>
-<li>GraphCMS&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x4F5C;&#x6210;</li>
 <li>&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x304A;&#x3088;&#x3073;&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x306E;&#x78BA;&#x8A8D;</li>
 <li>&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x8A18;&#x4E8B;&#x306E;&#x4F5C;&#x6210;</li>
+<li>GraphiQL&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30AF;&#x30A8;&#x30EA;&#x78BA;&#x8A8D;</li>
 </ol>
 
                                 
@@ -445,7 +461,7 @@ DOWNLOAD SCHEMA&#x3068;&#x3044;&#x3046;&#x30DC;&#x30BF;&#x30F3;&#x304C;&#x3042;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lesson 06: GraphCMSセットアップ","level":"1.7","depth":1,"next":{"title":"Lesson 07: simple-blog解説","level":"1.8","depth":1,"path":"lesson-07.md","ref":"lesson-07.md","articles":[]},"previous":{"title":"Lesson 05: LimeGreenJSの使い方","level":"1.6","depth":1,"path":"lesson-05.md","ref":"lesson-05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-06.md","mtime":"2017-12-28T06:40:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-28T22:05:10.324Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lesson 06: GraphCMSセットアップ","level":"1.7","depth":1,"next":{"title":"Lesson 07: simple-blog解説","level":"1.8","depth":1,"path":"lesson-07.md","ref":"lesson-07.md","articles":[]},"previous":{"title":"Lesson 05: LimeGreenJSの使い方","level":"1.6","depth":1,"path":"lesson-05.md","ref":"lesson-05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-06.md","mtime":"2017-12-28T23:43:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-05T01:08:36.384Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
