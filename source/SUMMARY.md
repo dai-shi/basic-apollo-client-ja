@@ -14,6 +14,6 @@
 
 
 * [Appendix 01: 認証と権限について](appendix-01.md)
-* [Appendix 02: GraphQL subscriptionsについて](appendix-02.md)
-* [Appendix 03: Graphcool Frameworkについて](appendix-03.md)
-* [Appendix 04: Apollo Serverについて](appendix-04.md)
+* Appendix 02: GraphQL subscriptionsについて (TODO)
+* Appendix 03: Graphcool Frameworkについて (TODO)
+* Appendix 04: Apollo Serverについて (TODO)
