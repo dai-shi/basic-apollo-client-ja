@@ -37,9 +37,7 @@ type Task @model {
 
 右側のエリアでTaskのtypeをGUIで確認できます。
 
-## パーミッションの設定
-
-PERMISSIONSからTaskの全パーミッションをonにしておきましょう。
+PERMISSIONSからTaskの全パーミッションがonになっていることを確認しましょう。
 
 ## コンテンツの作成
 
@@ -77,7 +75,11 @@ mutation createTask($title: String!, $description: String) {
 }
 ```
 
-これは、QUERY VARIABLEも使いますので、そのエリアを開いてJSON形式で入力してください。
+これは、QUERY VARIABLEも使いますので、そのエリアを開いてJSON形式で入力してください。例えば、下記のようにします。
+
+```
+{"title":"あいうえお","description":"かきくけこ"}
+```
 
 ## 課題
 
