@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React/GraphQLアプリ開発入門 · GitBook</title>
+        <title>Lesson 08: Graphcoolセットアップ · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lesson-01.html" />
+    <link rel="next" href="lesson-09.html" />
     
+    
+    <link rel="prev" href="lesson-07.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -191,7 +193,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="lesson-08.html">
+        <li class="chapter active" data-level="1.9" data-path="lesson-08.html">
             
                 <a href="lesson-08.html">
             
@@ -319,7 +321,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >React/GraphQLアプリ開発入門</a>
+        <a href="." >Lesson 08: Graphcoolセットアップ</a>
     </h1>
 </div>
 
@@ -334,16 +336,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="reactgraphql&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x5165;&#x9580;">React/GraphQL&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x5165;&#x9580;</h1>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;React&#x3068;GraphQL&#x3092;&#x7528;&#x3044;&#x3066;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x958B;&#x767A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x57FA;&#x790E;&#x3092;&#x5B66;&#x3076;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;
-&#x5C0E;&#x5165;&#x6642;&#x306E;&#x6577;&#x5C45;&#x3092;&#x4E0B;&#x3052;&#x308B;&#x305F;&#x3081;&#x3001;GraphQL&#x30B5;&#x30FC;&#x30D0;&#x306F;BaaS&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#x3002;
-GraphQL&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3068;&#x3057;&#x3066;&#x306F;Apollo Client&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="&#x30EA;&#x30F3;&#x30AF;&#x96C6;">&#x30EA;&#x30F3;&#x30AF;&#x96C6;</h3>
-<ul>
-<li><a href="https://reactjs.org" target="_blank">React&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
-<li><a href="http://graphql.org" target="_blank">GraphQL&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
-<li><a href="https://www.apollographql.com" target="_blank">Apollo&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
-</ul>
+                                <h1 id="graphcool&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;">Graphcool&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;</h1>
+<p>Graphcool&#x306F;GraphQL&#x306E;&#x30D0;&#x30C3;&#x30AF;&#x30A8;&#x30F3;&#x30C9;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3067;&#x3059;&#x3002;
+Graphcool&#x306F;&#x6700;&#x3082;&#x6709;&#x540D;&#x306A;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306E;&#x4E00;&#x3064;&#x3067;&#x3001;&#x5148;&#x9032;&#x7684;&#x306A;&#x53D6;&#x308A;&#x7D44;&#x307F;&#x3092;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x4ED5;&#x69D8;&#x3082;&#x983B;&#x7E41;&#x306B;&#x5909;&#x308F;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>Graphcool&#x306E;&#x4E3B;&#x6D41;&#x306F;CLI&#x306B;&#x79FB;&#x884C;&#x3057;&#x3066;&#x3044;&#x308B;&#x3088;&#x3046;&#x3067;&#x3059;&#x304C;&#x3001;
+&#x4ECA;&#x56DE;&#x306F;GUI&#x3092;&#x4F7F;&#x3063;&#x3066;&#x7C21;&#x5358;&#x306A;TODO&#x7BA1;&#x7406;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x4F5C;&#x3063;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>TODO&#x306F;title&#x3068;description&#x3067;&#x69CB;&#x6210;&#x3055;&#x308C;&#x3066;&#x3001;&#x8FFD;&#x52A0;&#x3084;&#x524A;&#x9664;&#x304C;&#x3067;&#x304D;&#x308B;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;</p>
+<h2 id="&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;">&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h2>
+<p><a href="https://www.graph.cool/" target="_blank">https://www.graph.cool/</a></p>
+<p>&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x53F3;&#x4E0A;&#x306E;OPEN CONSOLE&#x304B;&#x3089;&#x30B5;&#x30A4;&#x30F3;&#x30A2;&#x30C3;&#x30D7;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4F5C;&#x6210;">&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h2>
+<p>&#x65B0;&#x3057;&#x3044;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x540D;&#x306F;&#x4F55;&#x3067;&#x3082;&#x69CB;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;</p>
+<h2 id="&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x306E;&#x4F5C;&#x6210;">&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x306E;&#x4F5C;&#x6210;</h2>
+<p>SCHEMA&#x306E;TYPES&#x3067;&#x4E0B;&#x8A18;&#x306E;&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>type Task @model {
+  id: ID! @isUnique
+  createdAt: DateTime!
+  title: String!
+  description: String
+}
+</code></pre><p>&#x5143;&#x304B;&#x3089;&#x3042;&#x308B;&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x306F;&#x6D88;&#x3055;&#x305A;&#x306B;&#x6B8B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x53F3;&#x5074;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3067;Task&#x306E;type&#x3092;GUI&#x3067;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>PERMISSIONS&#x304B;&#x3089;Task&#x306E;&#x5168;&#x30D1;&#x30FC;&#x30DF;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x304C;on&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x4F5C;&#x6210;">&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x4F5C;&#x6210;</h2>
+<p>&#x30A2;&#x30D7;&#x30EA;&#x3068;&#x3057;&#x3066;&#x306E;&#x52D5;&#x4F5C;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x4E8B;&#x524D;&#x306B;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>DATA / Task&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;title&#x3092;&#x5165;&#x529B;&#x3057;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30DC;&#x30BF;&#x30F3;&#x3067;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="graphiql">GraphiQL</h2>
+<p>Graphcool&#x306B;&#x3082;GraphiQL&#x304C;&#x7D44;&#x307F;&#x8FBC;&#x307E;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+PLAYGROUND&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x7D44;&#x307F;&#x7ACB;&#x3066;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+SCHEMA&#x306E;&#x30C9;&#x30ED;&#x30EF;&#x30FC;&#x3067;Docs&#x3082;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x4ECA;&#x56DE;&#x306E;&#x984C;&#x6750;&#x3067;&#x5B9F;&#x969B;&#x306B;&#x4F7F;&#x3046;&#x30AF;&#x30A8;&#x30EA;&#x306F;&#x4E0B;&#x8A18;&#x3067;&#x3059;&#x3002;&#x8A66;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>{
+  allTasks(orderBy: createdAt_DESC) {
+    id
+    title
+    description
+  }
+}
+</code></pre><p>&#x307E;&#x305F;&#x3001;&#x4ECA;&#x56DE;&#x306F;mutation&#x3082;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x4E0B;&#x8A18;&#x3082;&#x8A66;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>mutation createTask($title: String!, $description: String) {
+  createTask(title: $title, description: $description) {
+    id
+    title
+    description
+  }
+}
+</code></pre><p>&#x3053;&#x308C;&#x306F;&#x3001;QUERY VARIABLE&#x3082;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x305D;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3092;&#x958B;&#x3044;&#x3066;JSON&#x5F62;&#x5F0F;&#x3067;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x4F8B;&#x3048;&#x3070;&#x3001;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>{&quot;title&quot;:&quot;&#x3042;&#x3044;&#x3046;&#x3048;&#x304A;&quot;,&quot;description&quot;:&quot;&#x304B;&#x304D;&#x304F;&#x3051;&#x3053;&quot;}
+</code></pre><h2 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h2>
+<ol>
+<li>&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x8FFD;&#x52A0;</li>
+<li>GraphiQL&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30AF;&#x30A8;&#x30EA;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;</li>
+<li>GraphiQL&#x3092;&#x4F7F;&#x3063;&#x3066;mutation&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;</li>
+</ol>
 
                                 
                                 </section>
@@ -371,8 +418,12 @@ GraphQL&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30E9;&#x30A4;&
 
             
                 
+                <a href="lesson-07.html" class="navigation navigation-prev " aria-label="Previous page: Lesson 07: simple-blog解説">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="lesson-01.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Lesson 01: 準備">
+                
+                <a href="lesson-09.html" class="navigation navigation-next " aria-label="Next page: Lesson 09: simple-todos解説">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -383,7 +434,7 @@ GraphQL&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30E9;&#x30A4;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React/GraphQLアプリ開発入門","level":"1.1","depth":1,"next":{"title":"Lesson 01: 準備","level":"1.2","depth":1,"path":"lesson-01.md","ref":"lesson-01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-14T23:55:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T06:30:33.393Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lesson 08: Graphcoolセットアップ","level":"1.9","depth":1,"next":{"title":"Lesson 09: simple-todos解説","level":"1.10","depth":1,"path":"lesson-09.md","ref":"lesson-09.md","articles":[]},"previous":{"title":"Lesson 07: simple-blog解説","level":"1.8","depth":1,"path":"lesson-07.md","ref":"lesson-07.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-08.md","mtime":"2018-01-07T00:28:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T06:30:33.393Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

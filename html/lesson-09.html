@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React/GraphQLアプリ開発入門 · GitBook</title>
+        <title>Lesson 09: simple-todos解説 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lesson-01.html" />
+    <link rel="next" href="lesson-10.html" />
     
+    
+    <link rel="prev" href="lesson-08.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -204,7 +206,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="lesson-09.html">
+        <li class="chapter active" data-level="1.10" data-path="lesson-09.html">
             
                 <a href="lesson-09.html">
             
@@ -319,7 +321,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >React/GraphQLアプリ開発入門</a>
+        <a href="." >Lesson 09: simple-todos解説</a>
     </h1>
 </div>
 
@@ -334,16 +336,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="reactgraphql&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x5165;&#x9580;">React/GraphQL&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x5165;&#x9580;</h1>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;React&#x3068;GraphQL&#x3092;&#x7528;&#x3044;&#x3066;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x958B;&#x767A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x57FA;&#x790E;&#x3092;&#x5B66;&#x3076;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;
-&#x5C0E;&#x5165;&#x6642;&#x306E;&#x6577;&#x5C45;&#x3092;&#x4E0B;&#x3052;&#x308B;&#x305F;&#x3081;&#x3001;GraphQL&#x30B5;&#x30FC;&#x30D0;&#x306F;BaaS&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#x3002;
-GraphQL&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3068;&#x3057;&#x3066;&#x306F;Apollo Client&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="&#x30EA;&#x30F3;&#x30AF;&#x96C6;">&#x30EA;&#x30F3;&#x30AF;&#x96C6;</h3>
+                                <h1 id="simple-todos&#x89E3;&#x8AAC;">simple-todos&#x89E3;&#x8AAC;</h1>
+<p>LimeGreenJS&#x306B;GraphCMS&#x3092;&#x4F7F;&#x3063;&#x305F;&#x7C21;&#x5358;&#x306A;TODO&#x7BA1;&#x7406;&#x30A2;&#x30D7;&#x30EA;&#x304C;&#x767B;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x5B9F;&#x884C;&#x3059;&#x308B;">&#x5B9F;&#x884C;&#x3059;&#x308B;</h2>
+<p><a href="https://limegreenjs.axlight.com/" target="_blank">https://limegreenjs.axlight.com/</a></p>
+<p>&#x3092;&#x958B;&#x3044;&#x3066;OFFICIAL&#x306E;simple-todos&#x3092;&#x898B;&#x3064;&#x3051;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&quot;RUN APP&quot;&#x3067;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;&#x30D6;&#x30ED;&#x30B0;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8AAD;&#x3080;">&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8AAD;&#x3080;</h2>
+<p>&quot;SHOW CODE&quot;&#x3067;GitHub&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x958B;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+README.md&#x3092;&#x9664;&#x304F;&#x3068;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;4&#x3064;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 <ul>
-<li><a href="https://reactjs.org" target="_blank">React&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
-<li><a href="http://graphql.org" target="_blank">GraphQL&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
-<li><a href="https://www.apollographql.com" target="_blank">Apollo&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
+<li>index.html: &#x6700;&#x521D;&#x306B;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x308B;html&#x3067;&#x3059;&#x3002;js&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;&#x30D0;&#x30F3;&#x30C9;&#x30EB;&#x3055;&#x308C;&#x305F;&#x3082;&#x306E;&#x304C;&#x8FFD;&#x8A18;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</li>
+<li>index.js: &#x30A8;&#x30F3;&#x30C8;&#x30EA;&#x30FC;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;js&#x3067;&#x3059;&#x3002;App.js&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>App.js: &#x30E1;&#x30A4;&#x30F3;&#x306E;js&#x3067;&#x3059;&#x3002;React/GraphQL&#x3092;&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>TodoList.js: TODO&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3067;&#x3059;&#x3002;&#x5168;TODO&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;GraphQL&#x306E;&#x30AF;&#x30A8;&#x30EA;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>TodoItem.js: TODO&#x306E;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3067;&#x3059;&#x3002;Delete&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;&#x3068;&#x5F53;&#x8A72;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;mutation&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>NewTodoForm.js: &#x65B0;&#x3057;&#x3044;TODO&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3067;&#x3059;&#x3002;Add&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;&#x3068;&#x65B0;&#x898F;&#x8FFD;&#x52A0;&#x3059;&#x308B;mutation&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x307E;&#x3059;&#x3002;</li>
 </ul>
+<h2 id="&#x81EA;&#x5206;&#x306E;graphcool&#x3067;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;">&#x81EA;&#x5206;&#x306E;Graphcool&#x3067;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;</h2>
+<p>simple-todos&#x3092;fork&#x3057;&#x3066;&#x81EA;&#x5206;&#x306E;Graphcool&#x3068;&#x3064;&#x306A;&#x3052;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<ol>
+<li>Graphcool&#x306E;ENDPOINTS&#x3092;&#x958B;&#x304D;&#x3001;Simple&#x306E;URL&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3059;&#x308B;</li>
+<li>fork&#x3057;&#x305F;simple-todos&#x306E;App.js&#x306E;HttpLink&#x306E;uri&#x3092;&#x4E0A;&#x8A18;&#x306E;URL&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;</li>
+<li>LimeGreenJS&#x3092;&#x30EA;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x3001;&#x8A72;&#x5F53;&#x30A2;&#x30D7;&#x30EA;&#x3092;RUN APP&#x3059;&#x308B;</li>
+</ol>
+<p>&#x60F3;&#x5B9A;&#x901A;&#x308A;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x8FFD;&#x52A0;&#x3084;&#x524A;&#x9664;&#x3082;&#x8A66;&#x3057;&#x3066;&#x3001;
+Graphcool&#x5074;&#x306E;DATA&#x304C;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h2>
+<ol>
+<li>&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;&#x3088;&#x304F;&#x8AAD;&#x3080;</li>
+<li>URL&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x81EA;&#x5206;&#x306E;Graphcool&#x306B;&#x3064;&#x306A;&#x3052;&#x308B;</li>
+<li>(&#x4F59;&#x88D5;&#x304C;&#x3042;&#x308C;&#x3070;)&#x5C11;&#x3057;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x3044;&#x3058;&#x3063;&#x3066;&#x307F;&#x308B;</li>
+</ol>
 
                                 
                                 </section>
@@ -371,8 +396,12 @@ GraphQL&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30E9;&#x30A4;&
 
             
                 
+                <a href="lesson-08.html" class="navigation navigation-prev " aria-label="Previous page: Lesson 08: Graphcoolセットアップ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="lesson-01.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Lesson 01: 準備">
+                
+                <a href="lesson-10.html" class="navigation navigation-next " aria-label="Next page: Lesson 10: 総合課題">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -383,7 +412,7 @@ GraphQL&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30E9;&#x30A4;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React/GraphQLアプリ開発入門","level":"1.1","depth":1,"next":{"title":"Lesson 01: 準備","level":"1.2","depth":1,"path":"lesson-01.md","ref":"lesson-01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-14T23:55:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T06:30:33.393Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lesson 09: simple-todos解説","level":"1.10","depth":1,"next":{"title":"Lesson 10: 総合課題","level":"1.11","depth":1,"path":"lesson-10.md","ref":"lesson-10.md","articles":[]},"previous":{"title":"Lesson 08: Graphcoolセットアップ","level":"1.9","depth":1,"path":"lesson-08.md","ref":"lesson-08.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-09.md","mtime":"2018-01-05T03:25:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T06:30:33.393Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
