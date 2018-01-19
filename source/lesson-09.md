@@ -8,7 +8,7 @@ LimeGreenJSにGraphCMSを使った簡単なTODO管理アプリが登録されて
 
 を開いてOFFICIALのsimple-todosを見つけましょう。
 
-"RUN APP"で実行して、ブログが表示されるのを確認してください。
+"RUN APP"で実行して、アプリが表示されるのを確認してください。
 
 ## コードを読む
 
