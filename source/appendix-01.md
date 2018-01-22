@@ -135,4 +135,7 @@ query ($node_id: ID!, $user_id: ID!) {
 }
 ```
 
+## 参考情報
 
+- https://www.graph.cool/docs/tutorials/auth/authorization-for-a-cms-miesho4goo/
+- https://www.graph.cool/docs/reference/auth/overview-ohs4aek0pe
