@@ -19,8 +19,23 @@ LimeGreenJSに認証と権限の機能を加えたTODO管理アプリがあり�
 
 "RUN APP"で実行して、アプリが表示されるのを確認してください。
 
+## 権限
+
+standard-todosで採用した権限モデルはownershipと呼ばれる基本的なもので、
+下記のような振る舞いをします。
+
+- ログインしてTODOを作成するとそのTODOのownerとなる
+- ownerが設定されたTODOはownerのみが削除(もしくは編集)できる
+- TODOを作成時にprivate設定ができ、その場合はownerのみがそのTODOを見ることができる
+- ログインせずにTODOを作成するとowner未設定になり、誰でも削除(もしくは編集)できる
+
+権限の設定はGraphcoolのpermissionで設定するとともに、
+クライアントサイドでもそのpermissionを想定したクエリを発行することにより、
+エラーを避けたり、わかりやすいUXとしたりする。
+
 ## 自分でgraphcoolを設定する
 
+standard-todosを動かすためには、
 simple-todosに加えて下記の設定をします。
 
 ### 認証の設定
@@ -42,7 +57,21 @@ GraphcoolのPERMISSIONSで次のように設定しましょう。
   - Everyone Update: OFF
   - Everyone Delete: OFF
 - Task
-  - Everyone Read: ON
+  - Everyone Read: ON (下記のPermission Queryを設定する)
+```
+query ($node_id: ID!) {
+  SomeTaskExists(
+    filter: {
+      id: $node_id
+      OR: [{
+        private: false
+      }, {
+        private: null
+      }]
+    }
+  )
+}
+```
   - Everyone Create: ON
   - Everyone Update: ON (下記のPermission Queryを設定する)
 ```
@@ -62,6 +91,19 @@ query ($node_id: ID!) {
     filter: {
       id: $node_id
       owner: null
+    }
+  )
+}
+```
+  - Authenticated Read: ON (下記のPermission Queryを設定する)
+```
+query ($node_id: ID!, $user_id: ID!) {
+  SomeTaskExists(
+    filter: {
+      id: $node_id
+      owner: {
+        id: $user_id
+      }
     }
   )
 }
