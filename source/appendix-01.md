@@ -59,80 +59,80 @@ GraphcoolのPERMISSIONSで次のように設定しましょう。
 - Task
   - Everyone Read: ON (下記のPermission Queryを設定する)
 ```
-query ($node_id: ID!) {
-  SomeTaskExists(
-    filter: {
-      id: $node_id
-      OR: [{
-        private: false
-      }, {
-        private: null
-      }]
-    }
-  )
-}
+  query ($node_id: ID!) {
+      SomeTaskExists(
+      filter: {
+        id: $node_id
+        OR: [{
+          private: false
+        }, {
+          private: null
+        }]
+      }
+    )
+  }
 ```
   - Everyone Create: ON
   - Everyone Update: ON (下記のPermission Queryを設定する)
 ```
-query ($node_id: ID!) {
-  SomeTaskExists(
-    filter: {
-      id: $node_id
-      owner: null
+    query ($node_id: ID!) {
+      SomeTaskExists(
+        filter: {
+          id: $node_id
+          owner: null
+        }
+      )
     }
-  )
-}
 ```
   - Everyone Delete: ON (下記のPermission Queryを設定する)
 ```
-query ($node_id: ID!) {
-  SomeTaskExists(
-    filter: {
-      id: $node_id
-      owner: null
+    query ($node_id: ID!) {
+      SomeTaskExists(
+        filter: {
+          id: $node_id
+          owner: null
+        }
+      )
     }
-  )
-}
 ```
   - Authenticated Read: ON (下記のPermission Queryを設定する)
 ```
-query ($node_id: ID!, $user_id: ID!) {
-  SomeTaskExists(
-    filter: {
-      id: $node_id
-      owner: {
-        id: $user_id
-      }
-    }
-  )
-}
+    query ($node_id: ID!, $user_id: ID!) {
+      SomeTaskExists(
+        filter: {
+          id: $node_id
+          owner: {
+            id: $user_id
+          }
+        }
+    )
+  }
 ```
   - Authenticated Update: ON (下記のPermission Queryを設定する)
 ```
-query ($node_id: ID!, $user_id: ID!) {
-  SomeTaskExists(
-    filter: {
-      id: $node_id
-      owner: {
-        id: $user_id
+  query ($node_id: ID!, $user_id: ID!) {
+    SomeTaskExists(
+      filter: {
+        id: $node_id
+        owner: {
+          id: $user_id
+        }
       }
-    }
-  )
-}
+    )
+  }
 ```
   - Authenticated Delete: ON (下記のPermission Queryを設定する)
 ```
-query ($node_id: ID!, $user_id: ID!) {
-  SomeTaskExists(
-    filter: {
-      id: $node_id
-      owner: {
-        id: $user_id
+  query ($node_id: ID!, $user_id: ID!) {
+    SomeTaskExists(
+      filter: {
+        id: $node_id
+        owner: {
+          id: $user_id
+        }
       }
-    }
-  )
-}
+    )
+  }
 ```
 
 ## 参考情報
