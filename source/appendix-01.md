@@ -31,7 +31,7 @@ standard-todosで採用した権限モデルはownershipと呼ばれる基本的
 
 権限の設定はGraphcoolのpermissionで設定するとともに、
 クライアントサイドでもそのpermissionを想定したクエリを発行することにより、
-エラーを避けたり、わかりやすいUXとしたりする。
+エラーを避けたり、わかりやすいUXとしたりする必要があります。
 
 ## 自分でgraphcoolを設定する
 
